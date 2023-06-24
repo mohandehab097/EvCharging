@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "959253024456",
+    "firebase_url": "https://evcharging-cc161-default-rtdb.firebaseio.com",
+    "project_id": "evcharging-cc161",
+    "storage_bucket": "evcharging-cc161.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959253024456:android:3093d6ed37301bd76bdffd",
+        "android_client_info": {
+          "package_name": "com.example.evchargingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_FlX9ogKlFSGT4w4dxL6I6s9519aqXkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
