@@ -50,35 +50,65 @@
         android:src="@drawable/group_1280"
         android:layout_marginTop="280dp"/>
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/superChargeIcon" />
 
     <TextView
-        android:id="@+id/startCharge"
+        android:id="@+id/start"
         android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginRight="104dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
         android:background="@drawable/gradient_background"
         android:gravity="center"
         android:paddingLeft="30dp"
         android:paddingTop="10dp"
         android:paddingRight="30dp"
         android:paddingBottom="10dp"
-        android:text="Start Charge"
+        android:text="Start"
         android:textColor="@color/black"
         android:textSize="12dp"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
         app:layout_constraintTop_toTopOf="@+id/superChargeIcon" />
 
+    <TextView
+        android:id="@+id/stop"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/gradient_background"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:text="Stop"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/superChargeIcon" />
+
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@+id/stop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/gradient_background"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Back"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

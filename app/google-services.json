@@ -1,27 +1,37 @@
 {
   "project_info": {
-    "project_number": "959253024456",
-    "firebase_url": "https://evcharging-cc161-default-rtdb.firebaseio.com",
-    "project_id": "evcharging-cc161",
-    "storage_bucket": "evcharging-cc161.appspot.com"
+    "project_number": "1009750059003",
+    "firebase_url": "https://garage-9fbb2-default-rtdb.firebaseio.com",
+    "project_id": "garage-9fbb2",
+    "storage_bucket": "garage-9fbb2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:959253024456:android:3093d6ed37301bd76bdffd",
+        "mobilesdk_app_id": "1:1009750059003:android:087ce184a07effc6d94d5e",
         "android_client_info": {
           "package_name": "com.example.evchargingapp"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1009750059003-64ns5ol0aaf09uktiml25nqa7e9bg09a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyD_FlX9ogKlFSGT4w4dxL6I6s9519aqXkM"
+          "current_key": "AIzaSyBt86_lGQa6pE96b6ttWhtVDPOKSS2qVFs"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009750059003-64ns5ol0aaf09uktiml25nqa7e9bg09a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
