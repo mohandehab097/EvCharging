@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -16,7 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.ktx.Firebase;
 
 public class ChargeStatusActivity extends AppCompatActivity {
-    TextView watt, back, chargePercent;
+    TextView watt, back;
 
     FirebaseDatabase firebase;
 
@@ -34,19 +35,14 @@ public class ChargeStatusActivity extends AppCompatActivity {
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String value = snapshot.getValue(String.class);
+                double value = snapshot.getValue(Double.class);
 
-
-                if (value != null) {
-                    watt.setText(value);
-
-                    chargePercent.setText(String.valueOf(3000 / Double.parseDouble(value)));
-                }
+                watt.setText("" + value);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Log.d("rabbit", "onCancelled: " +error);
             }
         });
 
