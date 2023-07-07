@@ -16,9 +16,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.ktx.Firebase;
 
 public class ChargeStatusActivity extends AppCompatActivity {
-    TextView watt,back;
+    TextView watt, back, chargePercent;
 
     FirebaseDatabase firebase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,6 @@ public class ChargeStatusActivity extends AppCompatActivity {
         back = findViewById(R.id.back);
 
 
-
         DatabaseReference ref = firebase.getReference("data");
 
         ref.addValueEventListener(new ValueEventListener() {
@@ -36,7 +36,12 @@ public class ChargeStatusActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value = snapshot.getValue(String.class);
 
-                watt.setText(value);
+
+                if (value != null) {
+                    watt.setText(value);
+
+                    chargePercent.setText(String.valueOf(3000 / Double.parseDouble(value)));
+                }
             }
 
             @Override

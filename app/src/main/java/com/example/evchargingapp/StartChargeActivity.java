@@ -35,15 +35,14 @@ public class StartChargeActivity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ref.setValue("on");
+                ref.setValue(true);
             }
         });
 
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ref.setValue("off");
-
+                ref.setValue(false);
             }
         });
 
